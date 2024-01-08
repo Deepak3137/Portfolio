@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'josefin Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .hero{
@@ -17,9 +18,16 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    /* padding-top: 45px; */
+    padding: 20px 8%;
+    /* padding-left: 8%;
+    padding-right: 8%; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 1;
 }
 
 .logo{
@@ -195,6 +203,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     min-height: 400px;
+    gap: 40px;
 
 }
 
@@ -208,6 +217,13 @@ button:hover{
     margin: 15px;
     overflow: hidden;
     position: relative;
+    box-shadow: 5px 5px 20px red;
+
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
 }
 
 .card i{
